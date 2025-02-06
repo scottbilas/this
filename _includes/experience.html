@@ -1,0 +1,51 @@
+{%  assign root = site.data.experience %}
+{%  assign printed_plain = false %}
+{%  for item in root %}
+{%      if item.special %}
+<section id="sec-experience-special" class="experience">
+    <h2 class="title">{{item.special}}</h2>
+{%      elsif printed_plain == false %}
+{%          assign printed_plain = true %}
+</section>
+<section id="sec-experience" class="experience">
+    <h2 class="title">Other Experience</h2>
+{%      endif %}
+{% for item in root %}
+    <div id="exp-{{item.id}}" class="experience-item">
+        <div class="role">
+        {% if item.role %}
+            {{item.role}}
+        {% elsif item.roles %}
+            {% assign processed_roles = "" %}
+            {% for r in item.roles %}
+                {% assign sanitized_role = r | replace: " ", "&nbsp;" %}
+                {% if forloop.first %}
+                    {% assign processed_roles = sanitized_role %}
+                {% else %}
+                    {% assign processed_roles = processed_roles | append: " 🠔 " | append: sanitized_role %}
+                {% endif %}
+            {% endfor %}
+            {{ processed_roles }}
+        {% endif %}
+        </div>
+{%      if item.special %}
+        <div class="special-time">
+            {{item.times[0]}} - {{item.times[1]}}
+        </div>
+{%      else %}
+        <div class="company">
+            {{item.company}} 
+            <span class="time">
+                {{item.times[0]}} - {{item.times[1]}}
+            </span>
+        </div> 
+{%      endif %}
+        {% if item.image %}
+        <img src="{{item.image}}" alt="{{item.image-tag | default: item.company}}" class="company-logo">
+        {% endif %}
+        <div class="details">{{item.details | markdownify}}</div>
+        <br>
+    </div>
+    {% endfor %}
+{%  endfor %}
+</section>

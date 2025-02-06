@@ -1,0 +1,17 @@
+.toc-main {
+    overflow-wrap: normal;
+    .title {
+        @include body-text;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        font-size: 1.2em;
+    }
+    .items {
+        @include body-text;
+        text-align: center;
+        .item {
+            padding-right: 15px;
+        }
+    }
+}

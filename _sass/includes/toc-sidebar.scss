@@ -1,0 +1,9 @@
+.toc-sidebar {
+    margin-bottom: 20px;
+    .title {
+        @include sub-header;
+    }
+    .section {
+        @include body-text;
+    }
+}

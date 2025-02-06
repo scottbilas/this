@@ -1,0 +1,37 @@
+{% assign projects = site.data.projects %}
+{% if projects %}
+<section id="sec-projects" class="projects">
+    <h2 class="title">Projects</h2>
+    {% for p in projects %}
+    <div class="project" {% if p.id %}id="prj-{{p.id}}"{% endif %}>
+        {% if p.image %}
+        <div class="logo-container">
+            <img class="logo" src="assets/icons-75/{{p.image}}" {% if p.image-tag %}title="{{p.image-tag}}"{% endif %}>
+        </div>
+        {% endif %}
+        <div class="details-container">
+            <div class="details">
+                {% if p.link %}
+                <a class="link" href="{{p.link}}">{{p.title}}</a>
+                {% else %}
+                <span class="link">{{p.title}}</span>
+                {% endif %}
+                {% if p.company %}
+                <span class="company">({{p.company}})</span>
+                {% endif %}
+            </div>
+
+            {% if p.times %}
+            <div class="times">{{p.times[0]}} - {{p.times[1]}}</div>
+            {% elsif p.time %}
+            <div class="times">{{p.time}}</div>
+            {% endif %}
+
+            <div class="details">
+                {{p.details | markdownify}}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+{% endif %}

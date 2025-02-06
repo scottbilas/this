@@ -1,0 +1,33 @@
+.publications {
+    .title {
+        @include header;
+    }
+    .publication-items {
+        .publication-item {
+            margin-bottom: 20px;
+            .publication-title {
+                text-decoration: none;
+                font-weight: bold;
+                @include body-text; 
+            }
+            .authors {
+                @include body-text; 
+            }
+            .conference {
+                @include body-text; 
+                color: var(--fg-color-title-sm);
+                font-weight: 100;
+            }
+            .type {
+                @include body-text; 
+            }
+            .details {
+                @include body-text; 
+            }
+            .attach {
+                @include body-text;
+                font-style: italic;
+            }
+        }
+    }
+}

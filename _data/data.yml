@@ -1,0 +1,38 @@
+title: Scott Bilas
+tagline: Technical & Strategic Leader | Systems Architect | Game/Tooling Builder
+support_dark_mode: true
+
+toc:
+  sidebar:
+    - title: Unity
+      id: experience-special
+    - title: Experience
+      id: experience
+    - title: Projects
+      id: projects
+    - title: Publications
+      id: publications
+  main:
+    - title: Experience
+      id: experience
+    - title: Projects
+      id: projects
+
+profile:
+  fun-facts:
+    - I'm that guy who [invented](#pub-game-objects) the data-driven [component/game object system](https://en.wikipedia.org/wiki/Entity_component_system#History) that Unity and some other game engines are based on.
+    - I led the development of games that were installed by literally a [billion users](https://en.wikipedia.org/wiki/Purble_Place) at our [studio](https://en.wikipedia.org/wiki/Oberon_Media) of 20 that started in my spare bedroom.
+    - I once remote-debugged SPU assembly on a devkit in Seattle from a Peruvian beach house over ISDN.
+    - Every December I roll up my sleeves and do my part to help [save Christmas](https://github.com/scottbilas/advent-of-code).
+    
+  details: |
+    In the three decades of my career, I've done everything from managing a game studio to steering architecture to creating scripting languages to crawling around under desks hooking up handmade patch cables. I've shipped games of all sizes with both custom engines and third party tech. I've been a core contributor to sustained releases of software-as-a-service for many years. I participate in open source and publish my own efforts.
+
+    I am fundamentally motivated by just a few simple things:
+
+    * Collaborating with others to solve problems people actually care about
+    * Seeing creative people happily using my mundane work to build amazing works of art
+    * Having space to follow threads wherever they lead _(this always pays off)_
+
+    Read on to see how I have executed on this. 30 years is a long time, so here are some friendly shortcuts to the good stuff:
+    

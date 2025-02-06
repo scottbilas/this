@@ -1,0 +1,65 @@
+- details: |
+    _Note: this section is missing links and files. Workin on it!_
+
+- title: Interview with Scott Bilas
+  conference: Adventure Classic Gaming, January 2010
+
+- title: Tornado Outbreak + Wwise = Love
+  conference: Wwise Tour, Seattle, 2009
+
+- title: Do What You Want …and Get Paid For It!
+  conference: Game Camp, Oslo (Keynote), 2008
+
+- title: "Optimizing the Development Pipeline: Tools, Technology, Process"
+  conference: "CGA Casual Connect Europe: West, Amsterdam, 2007; Game Camp, Oslo, 2008"
+
+- title: Making the Switch from Hard Core to Casual Game Development
+  conference: "CGA Casual Connect Europe: East, Kyiv, 2006"
+
+- title: Core Values of the Casual Industry
+  conference: Casual Connect Magazine, 2006
+
+- title: What About Flash? (Can You Really Make Games with It?)
+  conference: Game Developers Conference, San Francisco, 2005
+
+- title: The Continuous World of Dungeon Siege
+  id: continuous-world
+  conference: Game Developers Conference, San Jose, 2003<br>Game Developers Conference Europe, London, 2003
+
+- title: A Data-Driven Game Object System
+  id: game-objects
+  type: lecture
+  conference: Game Developers Conference, San Jose, 2002
+  details: |
+    This lecture was the inspiration for many game engines. Notably, the Unity game engine has a data-driven and scriptable component-based game object architecture and serialization system that was directly derived from this talk, including many of its core API's.
+
+    Over the years, GameObjects+Components has gone from fun original idea, to common practice, to tired and often scorned. ECS, which has been gaining traction recently, was supposedly originally inspired in part by my work, at least according to the [wikis](https://en.wikipedia.org/wiki/Entity_component_system).
+  attach: |
+    slides: [pdf](files/pubs/2002/gdc-san-jose/GameObjects.pdf) [ppt](files/pubs/2002/gdc-san-jose/GameObjects.ppt); audio: [mp3](files/pubs/2002/gdc-san-jose/GameObjects.mp3); original proposal: [pdf](files/pubs/2002/gdc-san-jose/GDC Game Objects Proposal.pdf "For posterity!")
+
+- title: Game Programming Gems II
+  conference: Charles River Media, 2001
+  details: |
+    I was the section editor for the "General Programming" section.
+
+- title: "FuBi: Automatic Function Exporting for Scripting and Networking"
+  id: fubi
+  conference: Game Developers Conference, San Jose, 2001
+  details: |
+    This was derived from my Gem from Game Programming Gems I. I invented a neat and cheap way to expose C++ functions to a scripting language. The usual methods require macros or postprocessors or IDL's or manual registration or other horrors. My method was to simply tag the function to be dllexported, then at runtime walk the exports and un-mangle the C++ names to extract the argument types. Neat and cheap, the best combo.
+
+- title: Gabriel Knight 3 Post Mortem
+  conference: Game Developer Magazine, June 2000 Issue
+
+- title: Game Programming Gems I
+  conference: Charles River Media, 2000
+  details: |
+    Contributor of 3 gems: "An Automatic Singleton Utility", "A Generic Handle-Based Resource Manager", and "A Generic Function Binding Interface". This last one led to my FuBi talk at GDC the following year.
+
+- title: It's Still Loading?
+  conference: Game Developers Conference, Seattle, 2000
+
+#- title: New Fun Blog
+#  link: "http://scottbilas.com"
+#  authors: Scott Bilas
+#  conference: Technical journal soup, 2006 - present

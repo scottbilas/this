@@ -1,0 +1,32 @@
+{% assign publications = site.data.publications %}
+{% if publications %}
+<section id="sec-publications" class="publications">
+    <h2 class="title">Publications, Lectures, Media</h2>
+    <div class="publication-items">
+        {% for pub in publications %}
+            <div class="publication-item" {% if pub.id %}id="pub-{{pub.id}}"{% endif %}>
+                <div class="publication-title">
+                    {% if pub.link %}
+                    <a href="{{pub.link}}">{{pub.title}}</a>
+                    {% else %}
+                    {{pub.title}}
+                    {% endif %}
+                    {% if pub.type %}
+                    <span class="type">({{pub.type}})</span>
+                    {% endif %}
+                </div>
+                {% if pub.authors %}
+                <div class="authors">{{pub.authors}}</div>
+                {% endif %}
+                <div class="conference">{{pub.conference}}</div>
+                {% if pub.details %}
+                <div class="details">{{pub.details | markdownify}}</div>
+                {% endif %}
+                {% if pub.attach %}
+                <div class="attach">{{pub.attach | markdownify}}</div>
+                {% endif %}
+            </div>
+        {%endfor%}
+    </div>
+</section>
+{% endif %}

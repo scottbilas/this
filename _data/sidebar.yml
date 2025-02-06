@@ -1,0 +1,45 @@
+contact:
+  # tiny amount of obfuscation to avoid spambots that don't run js
+  email-link: |
+    <script type="text/javascript">
+      var e = ['m','o','c','.','l','i','a','m','g','@','s','a','l','i','b','t','t','o','c','s'].reverse().join('')
+      document.write('<a href="mailto:'+e+'">'+e+'</a>')
+    </script>
+#  phone-link: |
+#    <script type="text/javascript">
+#      var p = ['x','x','x','.','x','x','x','.','x','x','x',' ','1','5','3','+'].reverse().join('')
+#      document.write('<a href="tel:'+p.replace(/[\s.]/g,'')+'">'+p+'</a>')
+#    </script>
+  location: Algarve, Portugal UTC+0
+#  timezone: Europe/Lisbon (UTC+0)
+  github: scottbilas
+  linkedin: scobi
+
+education:
+  - degree: Bachelor of Science,<br>With Distinction,<br>Computer Engineering
+    time: 1992-1995
+    university: Iowa State University,<br>College of Engineering
+
+skills:
+  - category: Deep expertise
+    tagline: I could teach a class
+    skill: 
+      - C# (extreme xp)
+      - C/C++
+      - Powershell
+      - Lua (code+integration)
+      - MSBuild :/
+      - git, hg, p4 (+admin)
+      - WPF
+      - <a href="https://github.com/scottbilas/chezmoi" title="I often zsh from pwsh hosted in a tmux pane in debian wsl via winterm.">dotfiles</a>
+  - category: Familiar
+    tagline: I can make things work
+    skill:
+      - Python
+      - Go
+      - Typescript
+      - Julia
+#  - category: DevOps
+#    skill:
+#      - Docker
+#      - Kubernetes 

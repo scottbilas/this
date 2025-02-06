@@ -1,0 +1,149 @@
+- special: My Time At Unity
+  roles:
+    - Staff Engineer
+    - DOTS Game Developer
+    - Core Technical Director
+    - Core Foundation Lead
+  id: unity
+  times: [May 2014, Present]
+  duration: 11 Years
+  company: Unity
+  details: |
+    I can't just list [Unity](https://en.wikipedia.org/wiki/Unity_(game_engine)) as an "experience" item, not after 11 years, nearly half my career.
+
+    My time at Unity is special, bigger and different from anything else I've done.
+
+    I have held a variety of roles as the company evolved and grew up. Way back when I started, we were all simply "Software Developer". (I liked that the best tbh.) I led teams, drove initiatives, worked directly for and with executives, defined technical strategy, collaborated in countless architectural steering decisions, and also did a huge amount of hands-on full-stack coding. Here are just a few highlights:
+
+    * Committed a huge number of PR's for the [Unity](#prj-unity) engine and editor, and supporting tooling and infrastructure.
+    * Drove codebase modularization efforts, improving maintainability and performance at scale.
+    * Owned the R&D training program, which grew out of my team's onboarding program. We would bring new engineering hires from around the world to Copenhagen for a week of sessions and socializing.
+    * Owned coding standards and conventions, including full-repo reformat and CI enforcement.
+    * Built efficient test suites and frameworks.
+    * Was on the ground floor when DOTS was born, became a high level IC to focus on critical real-world analysis and feedback.
+    * Brought a mid-size internal production into our monorepo, focused on removing friction, got it in the hands of all developers.
+
+    At Unity I have learned what it takes to reliably produce big middleware, as a service, to millions of gamedevs and billions of end users. The tradeoffs involved in production speed, advancing technology, maintenance, and stability. The contradictory demands of a huge user base, and the enormous costs incurred when we fail to listen to them. The difficulty of coordinating development across orgs and countries and time zones and engineering cultures and backgrounds. It's a mind-numbing amount of multi-dimensional complexity to manage, and it amazes me every day that, all things considered, we manage to keep on shipping.
+
+- role: Senior Engineer
+  id: bungie
+  times: [November 2009, April 2014]
+  duration: 4.5 years
+  company: Bungie
+  details: |
+    I remember first walking into the old Bungie bunker, looking around and exclaiming "look at all that firepower". This was a studio that was hyper focused and dripping with experience, success, and (very new for me) mad resources.
+
+    After a short onboarding through [Halo](#prj-halo-reach) I joined the top secret next project "Tiger", which became [Destiny](https://www.destinypedia.com/Destiny). It was crazy ambitious and we were building out the world editor for it. Over and over we were asked "is it going to have undo please?" by people experienced with the old toolset. For details on this work see [Grognok](#prj-grognok). I also worked on a variety of other tools and systems, but Grognok was the main event. I eventually took lead on it.
+
+    Also I was deeply engaged in studio-wide workflow discussions, infrastructure needs, improving branching strategies and developer efficiency. It was inevitable that I'd be the one migrating Bungie from Source Depot over to Perforce, retaining not only full history, but digging up the ancient SourceSafe and wiring up its history in there as well.
+    
+    I left Bungie for our family move to Scandiland. Was prepared to work for a bank or whatever, but Joachim the CTO of Unity had been keeping in contact with me, and convinced me to hook up with him in Copenhagen.
+
+- role: Game Developer
+  id: lcs
+  times: [July 2007, November 2009]
+  duration: 2.5 years
+  company: Loose Cannon Studios
+  # TODO: find my blog posts on reviewing, may have to dig into old wordpress db gunk (NEVER AGAIN WORDPRESS)
+  details: |
+    Loose Cannon was an absolutely awesome and scrappy little startup game studio. Such amazingly creative people, so motivating to be supporting them with tools and tech. See [Tornado Outbreak](#prj-tornado-outbreak) for details on my work there. I was one of the seniors building out core systems and tools, and so held a key role in steering the architecture of our engine.
+
+    LCS had a strong tradition of peer review on game code that they brought over from Sucker Punch. I optimized it by setting us up with an async review system for the "easy" changes, helped design and create the "prime review group" and some workflow tooling to ensure everything got reviewed and always had a prime reviewer involved. 
+
+    As is my pattern, I ended up migrating us from Subversion to Perforce and administering it. Along with Jira, Confluence, Crucible/Fisheye. One interesting tool I created was a central P4 clientspec manager, to easily fix and align everyone's workspaces at once. I brought this idea to Bungie and Unity as well.
+
+    I left Loose Cannon because the company was struggling, missing paychecks, and got pulled away by some people I knew at Bungie. It was bittersweet - I remember shedding tears after I made the decision and accepted the job.
+
+- roles:
+    - Director of Tools & Technology
+    - Director of Technology
+    - Game Developer
+  id: oberon
+  times: [September 2003, July 2007]
+  duration: 4 years
+  company: Oberon Media / Oberon Games
+  company-short: Oberon Games
+  details: |
+    I joined the small movement of big-game developers giving up a life of crunch and big budgets, aiming to ship games in months rather than years. Initially I was just a hired gun helping out on a project, but we managed to spin it into a Seattle game studio, a satellite for New York-based Oberon Media.
+
+    We shipped a long string of reasonably successful games. I directed and/or contributed to the [Vista In-Box Games](#prj-vista-games), [Betrapped!](#prj-betrapped), [Scrubbles](#prj-scrubbles), [Parker](#prj-parker), and more. The studio grew to over 40 people at its peak, as Oberon spun up local publishing operations. And of course I ended up doing our version control and a lot of other IT infrastructure.
+
+    I dipped a toe into game analytics by creating the Stripmine data mining platform. It was fairly primitive, but I learned a huge amount from this, lessons that stay with me to this day. For example, I tend to be suspicious of "the data says" statements, unless I personally look into the chain of ownership and processing of "the data".
+
+    The studio had some leadership churn and I eventually took it over and managed its >$2M P&L. I wasn't particularly prepared for this at the time, and got moved back to dedicated technical leadership. It wasn't until Unity that I finally gained the business perspective and maturity that I would have needed to run Oberon Games effectively. I left Oberon because I was pulled away by some people I knew who were starting up something new and exciting.
+
+- role: Senior Software Engineer
+  id: gpg
+  times: [November 1999, September 2003]
+  company: Gas Powered Games
+  duration: 4 years
+  details: |
+    I joined GPG's debut game fairly early, and found the team to be extremely skilled and hard core. Perfect for me. On my first day I blew them away by fixing the horrible build times they were having (ok, it was with a simple pch config fix that they had missed).
+
+    I was one of the seniors hammering away at the foundations of the game. While I had my hands in many parts of the codebase, my top focus was iteration times, just like at Sierra. See [Dungeon Siege](#prj-dungeon-siege) for details on my work there.
+    
+    Separately, one general workflow problem worth mentioning was that we were on [SourceSafe](https://www.reddit.com/r/programming/comments/8ozxf/ive_always_and_only_ever_used_sourcesafe_ive/), which is well-known not to scale. I migrated the full repo, history and all, along with the team, over to Perforce. We never looked back, and my reward (?) was to become "the P4 guy" for the rest of my life.
+
+    After shipping, I took the lead on our next big project Supreme Commander. But I was burned out and looking for something new, so I moved on very early in the project. Ok...it was a ragequit. I had no plans after this. Also, something it took me a while to admit to myself - leading such a project was way over my head at the time.
+
+    GPG was absolute peak difficulty for me in its strange combination of tech, drama, design, personalities, and overtime. We were all just kids then, and I couldn't be prouder of what we managed to accomplish.
+
+- role: Technical Lead & System Architect
+  id: sierra
+  times: [February 1998, November 1999]
+  company: Sierra Studios
+  duration: 2 years
+  details: |
+    Sierra was where I started my lifelong quest for faster iteration times.
+    
+    I joined [Gabriel Knight 3](#prj-gabriel-knight-3), a project that was already under way and struggling. There were many reasons for this, but among the most important was the time it took for new content, especially design, to be integrated, tested, and experimented with. To help address this, I built out scripting, data-driving, hot reloading, and in-game debug infrastructure.
+
+    At the same time, I moved into a tech leadership role, leading by example, but also deliberately steering the architecture towards stability, debuggability, and performance.
+
+    I left Sierra to work with the Cavedog people (now GPG) who had created one of my all-time favorite games, [Total Annihilation](https://en.wikipedia.org/wiki/Total_Annihilation).
+
+- role: Software Engineer
+  id: icat
+  times: [January 1997, February 1998]
+  duration: 1 year
+  company: iCat Corporation
+  company-short: iCat
+  details: |
+    [iCat Commerce Online](#prj-icat "codename: lemonade stand") was a crash course in the web development world of the time, as there was a mad rush to figure out how to sell things online. I chose iCat because they had a cool location. This job was very out of band for me. Have not repeated that mistake since.
+
+- role: Software Engineer
+  id: edmark
+  times: [January 1996, January 1997]
+  duration: 1 year
+  company: Edmark Corporation
+  company-short: Edmark
+  details: |
+    I was part of a small team doing Windows + Mac development for educational software using an in-house engine called Xplat. My main project here was [Cosmic Geometry](#prj-cosmic-geometry). I learned an early lesson regarding the cost of complexity.
+
+- role: Technician
+  id: terris
+  times: [July 1993, October 1996]
+  company: Terris Engineering Company (Self-employed)
+  toc-skip: true
+  details: |
+    This was a business where most of my time went into a macro-heavy Excel 4 spreadsheet I built and used to generate reports. I'd do a bunch of manual entry from raw data I'd get monthly, and turn it into pretty charts with macro assistance.
+    
+    This got complex enough that Excel would max out Windows's available object handles and need a reboot. (I got to play this sort of game again at Sierra with certain leaky DCC tooling.)
+
+- role: Software Engineer (Part Time)
+  id: cnde
+  times: [January 1993, December 1995]
+  company: Center for Nondestructive Evaluation
+  toc-skip: true
+  details: |
+    Sole developer assisting a research principal at a university research laboratory to build [Eddy](#prj-eddy). I was part time because of college, and was just trying to learn how to build software. This was the first time I built something "big" on my own. I was completely self-driven, as the principal had no interest in software.
+
+    I hosted a fan site for New Model Army called "51st State" on my dev machine at the lab. You could get away with such things back then, in the days before NATs, when all you needed was a DNS mapping.
+
+- role: Student Worker
+  id: cedar-rapids
+  times: [June 1993, August 1993]
+  company: City of Cedar Rapids, Water Department
+  toc-skip: true
+  details: |
+    Mostly I copied blueprints (the old ammonia kind), played Minesweeper, and fetched ice cream for people.

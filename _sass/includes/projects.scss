@@ -1,0 +1,42 @@
+.projects {
+    .title {
+        @include header;
+    }
+    .project {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+
+        .logo-container {
+            flex-shrink: 0;
+            margin-right: 20px;
+        }
+        .details-container {
+            flex-grow: 1;
+        }
+
+        .link {
+            @include body-text;
+            font-weight: bold;
+        }
+        .company {
+            @include body-text;
+            font-weight: lighter;
+        }
+        .logo {
+            width: 75px;
+            height: auto;
+            border-radius: 50%;
+            object-fit: cover;
+            opacity: 0.5
+        }
+        .details {
+            @include body-text;
+        }
+        .times {
+            @include body-text;
+            font-style: italic;
+            font-weight: lighter;
+        }
+    }
+}

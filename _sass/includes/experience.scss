@@ -1,0 +1,28 @@
+.experience {
+    .title {
+        @include header;
+    }
+    .experience-item {
+        .role {
+            @include sub-header;
+            text-align: left
+        }
+        .company {
+            @include body-text;
+            font-weight: bold;
+            .time {
+                float: right;
+                color: var(--fg-color-title-sm);
+                font-weight: 100;
+            }
+        }
+        .special-time {
+            @include body-text;
+            color: var(--fg-color-title-sm);
+            font-weight: 100;
+        }   
+        .details {
+            @include body-text;
+        }
+    }
+}

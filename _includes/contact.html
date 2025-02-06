@@ -1,0 +1,66 @@
+{% assign contact = site.data.sidebar.contact %}
+{% if contact %}
+<section class="contact">
+    <div class="title">Contact</div>
+    {% if contact.email %}
+        <div class="contact-item">
+            <i data-feather="mail"></i>
+            <a href="#">
+                {{contact.email}}
+            </a>
+        </div>
+    {% endif %}
+    {% if contact.email-link %}
+        <div class="contact-item">
+            <i data-feather="mail"></i>
+            {{contact.email-link}}
+        </div>
+    {% endif %}
+    {% if contact.github %}
+        <div class="contact-item">
+            <i data-feather="github"></i>
+            <a href="https://github.com/{{contact.github}}">
+                {{contact.github}}
+            </a>
+        </div>
+    {% endif %}
+    {% if contact.linkedin %}
+        <div class="contact-item">
+            <i data-feather="linkedin"></i>
+            <a href="https://linkedin.com/in/{{contact.linkedin}}">
+                {{contact.linkedin}}
+            </a>
+        </div>
+    {% endif %}
+    {% if contact.phone %}
+        <div class="contact-item">
+            <i data-feather="phone"></i>
+            <a href="#">
+                {{contact.phone}}
+            </a>
+        </div>
+    {% endif %}
+    {% if contact.phone-link %}
+        <div class="contact-item">
+            <i data-feather="phone"></i>
+            {{contact.phone-link}}
+        </div>
+    {% endif %}
+    {% if contact.timezone %}
+        <div class="contact-item">
+            <i data-feather="globe"></i>
+            <a href="https://doodle.com">
+                {{contact.timezone}}
+            </a>
+        </div>
+    {% endif %}
+    {% if contact.location %}
+        <div class="contact-item">
+            <i data-feather="map-pin"></i>
+            <a href="https://www.google.com/maps/search/{{contact.location | url_encode}}">
+                {{contact.location}}
+            </a>
+        </div>
+    {% endif %}
+</section>
+{% endif %}

@@ -1,0 +1,16 @@
+.career-profile {
+    .title {
+        @include header;
+    }
+    .tagline {
+        @include sub-header;
+    }
+    .fun-fact {
+        @include body-text;
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
+    }
+    .details {
+        @include body-text;
+    }
+}

@@ -1,0 +1,22 @@
+be sure to store images in this bitmap upside down! this reader is
+expecting mips stored like so (after flipping):
+
+   +--------+.........
+   |        |        .
+   |   1    +---+    .
+   |        | 2 +-+  .
+   |        |   |3+-+.
+   +--------+---+-+-++
+   |                 |
+   |                 |
+   |                 |
+   |                 |
+   |        0        |
+   |                 |
+   |                 |
+   |                 |
+   +-----------------+
+
+if there are no hand-made mipmaps then it will construct them on top of
+the 0 surface. each successive request for a new surface will box filter
+the surface down over itself.

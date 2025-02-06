@@ -1,0 +1,100 @@
+// Process traits.
+
+    /*
+        request
+            : <NULL>
+            | seed '/' full_trait '/' params
+            | full_trait '/' params
+            ;
+
+        seed
+            : '[' random_seed ']'   // seed for random number generator before query
+            ;
+
+        full_trait
+            : <NULL>
+            | trait
+            | trait ',' armor_trait
+            | trait ',' armor_trait ',' armor_trait
+            | trait ':' finish
+            ;
+
+        finish
+            : <fuel_block_name>
+            ;
+
+        armor_trait
+            : armor_material
+            | armor_skill_type
+            ;
+
+        armor_material
+            : "le", "sl", "bl", "br", "sc", "ch", "ba", "pl", "fp", "bp"
+            ;
+
+        armor_skill_type
+            : "f", "r", "m"
+            ;
+    */
+
+// Check for macros.
+
+    /*
+        trait
+            : <NULL>
+            | '*'
+            | pcontent_type
+            | attack_class
+            | template_name
+            | macro_name
+            ;
+
+        pcontent_type
+            : "armor" | "weapon" | "amulet" | "ring" | "body" | "helm"
+            | "gloves" | "boots" | "shield" | "melee" | "ranged" | "spell"
+            | "nmagic" | "cmagic" | "scroll" | "potion" | "spellbook"
+            ;
+
+        attack_class
+            : "beastfu" | "axe" | "club" | "dagger" | "hammer" | "longsword"
+            | "mace" | "staff" | "sword" | "bow" | "minigun" | "arrow" | "bolt"
+            | "combat_magic" | "nature_magic"
+            ;
+    */
+
+// Parse params.
+
+    /*
+        params
+            : param
+            | params '/' param
+            ;
+
+        param
+            : power_range
+            | modifier
+            | option
+            | seed
+            ;
+
+        power_range
+            : bound
+            | '-' bound
+            | bound '-'
+            | bound '-' bound
+            ;
+
+        bound
+            : '*'
+            | <float literal>
+            ;
+
+        modifier
+            : '+' modifier_name     // name of fuel block for modifier - up to MAX_MODIFIERS allowed per query
+            ;
+
+        option
+            : "-no_mod"             // no modifiers allowed
+            | "-no_orn"             // no ornate finish allowed
+            ;
+    */

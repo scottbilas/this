@@ -1,0 +1,9 @@
+{% assign toc = site.data.data.toc.sidebar %}
+{% if toc %}
+<section class="toc-sidebar">
+    <div class="title">Contents</div>
+    {% for sec in toc %}
+    <div class="section"><a href="#sec-{{sec.id}}">{{sec.title}}</a></div>
+    {% endfor %}
+</section>
+{% endif %}

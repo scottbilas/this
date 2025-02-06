@@ -1,0 +1,177 @@
+- title: Unity 4.6 through 6.1+
+  title-short: Unity
+  id: unity
+  company: Unity
+  image: unity.png
+  image-tag: The old logo ❤️
+  link: https://unity.com/
+  times: [ May 2014, Present ]
+  details: |
+    Contributions across the board to the Unity engine and editor. To pick a few: memory management, type systems, serialization, asset management, platform GUI, assert/log, scripting integration and bindings. I also introduced the internally-infamous `Entities.ForEach` to Entities.
+    
+    I created countless internal supporting tools - project launchers, Roslyn analyzers, multi-language formatters, test suites and runners, build tasks, tooling configs, git hooks, integration benchmarks, journaling analyzers.
+
+    Later on, I worked a few years in a deeply experienced internal production team where we used, prototyped, vetted, and helped to shape upcoming Unity technologies (particularly those inside DOTS).
+
+- title: Grognok, Creator and Destroyer of Worlds
+  title-short: Grognok
+  id: grognok
+  company: Bungie
+  image: grognok.png
+  image-tag: gnar
+  link: https://youtu.be/ZiDbv7nftM8?t=1759
+  times: [ February 2010, April 2014 ]
+  details: |
+    Grognok was the world builder for Bungie's Destiny. Built primarily with C#/WPF, and some Managed C++ to bridge the native simulation code. This is one of my favorite projects ever. I designed and implemented the core object system, messaging, undo/redo, versioning, Outliner, UI framework, serialization, and a hundred other things I'm forgetting.
+    
+    We applied or built a lot of (at the time) edgy tech along the way - dependency injection, interface-first design, interceptors, MVVM, enumerables and observables, stateless coding. I called it "trivial safe multithreading". It was a heavy .NET app where we didn't worry much about GC and the thing ran buttery smooth, yo.
+
+    I also of course built a v3 component-based game object system (v2 was [TA](#prj-tornado-outbreak), v1 was [DS](#prj-dungeon-siege)). This one was "extremely C#", highly dynamic, oriented towards authoring, and deeply integrated with our observable systems, undo/redo transactions, and serialization.
+
+    It's fun to remember this project because of the unexpected uses of what we built. Two of my favorites:
+    
+    * We got some odd requests by artists related to presenting (hide the UI, go full screen..). It turned out that they were using Grognok for art reviews and presentations. The game wasn't ready yet, and Grognok showed their work with high fidelity and performance.
+
+    * We implemented a simple copy-paste-drag-drop system that happened to store as compact encoded plaintext. Later we found that artists were loading two copies of Grognok, using one as a personal gallery, the other for the actual world building, and a lot of drag-dropping between them. They also would copy things from Grognok they liked for reuse into OneNote, or email them to each other, and the deserializer would generally figure out how to let them paste the gobbledygook into their world.
+
+- title: Halo Reach
+  id: halo-reach
+  company: Bungie
+  image: halo-reach.jpg
+  link: https://www.halopedia.org/Halo:_Reach
+  times: [ November 2009, January 2010 ]
+  details: |
+    I did some work on Halo tooling to cut my teeth at the studio. Mentioning it here because it was enough for a credit!
+
+- title: Bejeweled Blitz
+  id: bejeweled-blitz
+  company: PopCap
+  image: bejeweled.webp
+  link: https://www.mobygames.com/game/46400/bejeweled-blitz/
+  time: October 2009
+  details: |
+    While Loose Cannon tried to get funding, I was loaned to PopCap to keep the home fires burning. I spent a month-ish helping them get their Awesomium-based Facebook integration for Bejeweled Blitz working for the socials. Fun, weird, scripty work at a cool company.
+
+- title: Tornado Outbreak
+  id: tornado-outbreak
+  company: Loose Cannon Studios
+  image: tornado.jpg
+  link: https://en.wikipedia.org/wiki/Tornado_Outbreak
+  times: [ July 2007, September 2009 ]
+  details: |
+    Cartoony fun tornado destruction game with Katamari-esque gameplay launched on PS3, 360, and Wii, plus PC for dev work. This was my first real console title! Metascore 62-71 depending on platform. Tornado Outbreak unfortunately suffered from publisher drama which hurt the game. Still, I absolutely loved this project and our little studio - we had a lot of fun and did solid work.
+
+    A few things I recall building are the memory system, Lua integration and gamecode framework, a remote debugging/livecode tool, and audio (Wwise) layout and integration. And of course I built a native/script component-based gameobject system, though being greenfield it was a much cleaner and simpler v2 versus the system I built for [DS](#prj-dungeon-siege).
+    
+    All of this had to work well and fit in memory on all the consoles - the Wii made that most difficult of course. I also learned the joy of meeting platform certification requirements on three platforms at once.
+    
+    A further note on the livecode tool *Fuse* - this is one of my _favorite_ things I've ever done. Because I chose Lua for our gamecode language, and running Lua code involves dumping text into the runtime, it was easy to build a tool that ran on Windows, connected to device with a socket, and hot reload gamecode. On all platforms, including the little Wii, thinking of an idea in-game and trying it out live took milliseconds and retained all existing state. I configured my Lua gaming framework to keep this as safe as possible. Also, because it's easy to have Fuse shoot a bunch of injected code over upon connect, this was an easy way to debug live game state, by having the Lua on the other side report back watched variables etc. Loved this work.
+
+- title: Windows Vista In-Box Games
+  title-short: Vista Games
+  id: vista-games
+  company: Oberon Games
+  image: flowersweeper.jpg
+  link: https://www.mobygames.com/game/41710/microsoft-windows-vista-included-games/screenshots/
+  times: [ February 2006, November 2006 ]
+  details: |
+    I led the studio's effort to build the "in-box" games that launched with Vista: Mahjong, Purble Place, Chess, and Minesweeper, plus the card games Solitaire, Spider Solitaire, FreeCell, and Hearts.
+
+    Building games to be bundled with a Microsoft OS is unlike any gamedev experience I've ever had - extreme requirements for regional/political/language correctness, accessibility (hearing/seeing impairment), security, and original code/IP ownership guarantees. Plus the craziness of trying to dev against alpha tech and virtual build labs as an outside contractor with zero access to source. I used to call it "debugging through a keyhole".
+
+    Our games managed to survive past Vista into Windows 7, which meant that we shipped to well over a billion users!
+
+- title: Inspector Parker in Betrapped!
+  title-short: Betrapped!
+  id: betrapped
+  company: Oberon Games
+  image: betrapped.webp
+  link: https://www.mobygames.com/game/23464/inspector-parker-in-betrapped/
+  times: [ March 2004, September 2004 ]
+  details: |
+    A sequel to Inspector Parker, this time in Flash, with isometric layout, and a Minesweeper mechanic. I honestly can't remember what I did on this title, but I remember spending a lot of time close to the screen checking pixel offsets.
+    
+- title: Scrubbles (aka Bubble Town)
+  title-short: Scrubbles
+  id: scrubbles
+  company: Oberon Games
+  image: scrubbles.webp
+  link: https://www.mobygames.com/game/30885/scrubbles/
+  times: [ December 2003, June 2006 ]
+  details: |
+    This was a "bustamovelike" and our first experience with Flash. I did a variety of protoyping and game coding tasks. I also wrote a game host with some weak custom DRM for the Flash component so we could distribute it as a standalone game, which we reused in a few other titles. Scrubbles had a checkered development with starts and stops and design churn, but I'm super proud of this [very silly game](https://www.gamezebo.com/news/from-scrubbles-to-bubble-town/).
+
+- title: Inspector Parker
+  id: parker
+  company: Oberon Games
+  image: parker.webp
+  link: https://www.mobygames.com/game/23460/inspector-parker/
+  times: [ June 2003, November 2003 ]
+  details: |
+    My first casual game! Inspector Parker was a deductive 2D puzzle game, already in production when I joined to help finish it. It sold well enough for us to get funded to launch a real game studio.
+
+    Parker was built in [Macromedia Director](https://en.wikipedia.org/wiki/Adobe_Director) and programmed in [Lingo](https://en.wikipedia.org/wiki/Lingo_(programming_language)), shipped both standalone and in-web using the aging Shockwave plugin. I did random production tasks - integrating art and sound, fixing bugs, whatever was needed. Using a commercial engine was a super foreign experience for me, and I quickly learned the joy of finding bugs in someone else's closed source tech.
+
+    This was our first and last game built in Director.
+
+- title: Dungeon Siege
+  id: dungeon-siege
+  company: Gas Powered Games
+  image: dungeon-siege.jpg
+  link: https://store.steampowered.com/app/39190/Dungeon_Siege/
+  times: [ November 1999, April 2002 ]
+  details: |
+    This was an $8 million "3D Diablo with a pack mule and no loading screens" and, hey, we almost earned money on it! Metascore 86.
+
+    I built the game object system, content database, file system, save/load game, mid-layer multiplayer, script engine, resource compiler, event handling and state management, parameterized content, build system, mod system, and much of the debugging infrastructure and random utilities we had.
+
+    For the game object system, we were dealing with a "very C++" problem: the rigidity of static class hierarchies crashing into the reality of a fast-changing game that is trying to find the fun. Reconfiguring behaviors for game objects usually required a recompile after a risky class reorg, and the codebase was therefore evolving towards mega base classes. This inspired me to invent a data-driven script+native component system, which was so successful for us that I presented it as a [talk at GDC](#pub-game-objects). Another aid to iteration speed was my custom ["skrit"](files/dungeon-siege-specs/Skrit.pdf) language that built on ideas from GK3's "sheep" language, particularly async/await, but also added high performance automatic native binding via [fubi](#pub-fubi).
+
+    A further note on skrit and fubi: because every script function was dllexported, and new dll's could simply export in the same way to be visible to script, we accidentally had a deeply moddable game. Some big mods were made by the community on top of this setup, and they weren't limited to building solely in skrit because of the binding setup. Another fun accident was seeing our testers somehow writing skrit to do in-game fuzz-test automation of the world streamer.
+
+    DS had an extremely challenging design to implement for the PC's of that era, especially because threading was sort of "new" at the time on PCs. We used to joke that we were solving impossible problems every (16-hour) day. I'm also quite proud of the infinite [continuous world](#pub-continuous-world) system we built for it, which had an architecture that permitted full skrit-based pcontent init and other game logic to run safely in the background.
+    
+    Fun fact: my implementation of cheat code `superchunky`, which hugely cranked the multiplier for exploding gibs fx, and which I forgot to obfuscate in the binary, caused the game's rating to switch to 'mature'. Ridiculous IMO! Anyway, they had to put stickers on all the boxes that were already printed, while we rushed out a patch.
+
+- title: Gabriel Knight III
+  id: gabriel-knight-3
+  company: Sierra Studios
+  image: gabriel-knight-3.jpg
+  link: https://store.steampowered.com/app/497360/Gabriel_Knight_3_Blood_of_the_Sacred_Blood_of_the_Damned/
+  times: [ March 1998, November 1999 ]
+  details: |
+    This is the adventure game that [killed adventure gaming](http://oldmanmurray.com/features/77.html)! There was a 3D engine explosion going on in the industry at the time, and we learned hard, expensive lessons about how to transition from 2D to 3D. Metascore 80.
+
+    I was the technical lead for GK3, which shipped with ~400,000 total lines of code after three years in development. We wrote it primarily in C++ and script, with a little bit of assembly. Its 3D renderer "GEngine" was derived from the one that shipped with Sierra's SWAT 3. I designed and built GK3's game engine core, file system, save/load game, custom "Sheep" script engine, resource compiler, event handling, actor facial expressions, in-game development tools, debugging infrastructure, and random utilities. I may have used New Model Army cover art in the game debug tooling.
+
+    One more word on the scripting engine - it needed to support choreographing and synchronizing sequences across many frames, so I invented a "wait" system that was a primitive form of the async/await pattern that we know and love today. It worked so well that I built a more advanced version into [Dungeon Siege](#prj-dungeon-siege).
+
+- title: iCat Commerce Online
+  id: icat
+  company: iCat Corporation
+  image: icat.jpg
+  times: [ March 1997, February 1998 ]
+  details: |
+    A web-based e-commerce storefront server. ~200,000 total lines of code, twelve months in development, written in C, C++, Java, MSSQL, and ICL/HTML.
+
+    I led the project, and designed the architecture, databases, merchant and host web applications, managed the engineering implementation and blah blah, this was a boring project during the internet bubble and I never think about it.
+
+- title: Mighty Math Cosmic Geometry
+  title-short: Cosmic Geometry
+  id: cosmic-geometry
+  company: Edmark Corporation
+  image: cosmic-geometry.jpg
+  link: https://www.youtube.com/watch?v=hdTqc2qoFbA
+  times: [ Jan 1996, Dec 1996 ]
+  details: |
+    A high school-level 3D educational title for the retail market. ~380,000 total lines of code, twelve months in development, written in C++, Windows + Mac. Windows targeted Win3.11 and Win95, relying on MFC and Win32s to make it "work".
+
+    This was my first professional project. I did the 3D environmental menu, user interface tool classes, MFC dialogs, porting to and from the Mac, and doing the Windows builds.
+
+- title: Eddy
+  id: eddy
+  company: Center for Nondestructive Evaluation
+  image: cnde.gif
+  times: [ February 1994, December 1995 ]
+  details: |
+    A robotic control and data collection/analysis system for a pulsed eddy current research project, ~45,000 total lines of code, two years in dev part-time, written in C++/OWL. Sole developer. Designed and implemented the virtual instrumentation library, robotic control code, and sexy graphical interface for demos to investors.

@@ -1,0 +1,15 @@
+{% assign categories = site.data.sidebar.skills %}
+{% if categories %}
+<section class="skills">
+    <div class="title">Tech Skills</div>
+    {% for category in categories %}
+    <div class="category">{{category.category}}</div>
+        {% if category.tagline %}
+    <div class="tagline">{{category.tagline}}</div>
+        {% endif %}
+        {% for skill in category.skill%}
+    <div class="skill">{{skill}}</div>
+        {% endfor %}
+    {% endfor %}
+</section>
+{% endif %}

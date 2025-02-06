@@ -1,0 +1,30 @@
+{%  assign root = site.data.data.toc.main %}
+<section class="toc-main">
+{%      for sec in root %}
+{%          if sec.id == "experience" %}
+{%              assign items = site.data.experience %}
+    <div class="title"><a href="#sec-{{sec.id}}">{{sec.title}}</a></div>
+    <div class="items">
+{%              for item in items %}
+{%                  if item.toc-skip %}
+{%                      continue %}
+{%                  endif %}
+{%                  assign name = item.company-short | default: item.company %}
+        <span class="item"><a href="#exp-{{item.id}}">{{name | replace: " ", "&nbsp;"}}</a>&nbsp;{%if item.duration%}({{item.duration | replace: " ", "&nbsp;"}}){%endif%}</span>
+{%              endfor %}
+    </div>
+{%          elsif sec.id == "projects" %}
+{%              assign items = site.data.projects %}
+    <div class="title"><a href="#sec-{{sec.id}}">{{sec.title}}</a></div>
+    <div class="items">
+{%              for item in items %}
+{%                  if item.toc-skip %}
+{%                      continue %}
+{%                  endif %}
+{%                  assign name = item.title-short | default: item.title %}
+        <span class="item"><a href="#prj-{{item.id}}">{{name | replace: " ", "&nbsp;"}}</a></span>
+{%              endfor %}
+    </div>
+{%          endif %}
+{%      endfor %}
+</section>
