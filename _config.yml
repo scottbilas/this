@@ -1,6 +1,6 @@
 title:       Scott Bilas
 description: Personal web site of Scott Bilas.
-url:         http://this.scottbilas.com
+url:         https://this.scottbilas.com
 theme_skin:  blue
 
 sass: { style: compressed }
