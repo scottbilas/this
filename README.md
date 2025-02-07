@@ -18,4 +18,4 @@ Note that the force polling is needed for wsl. Known issue according to the robo
 
 Testing:
 
-`bundle exec htmlproofer _site --no-enforce-https --ignore-missing-alt --ignore-urls '/googleapis.com/,/gstatic.com/,/linkedin.com/'
+    bundle exec htmlproofer _site --no-enforce-https --ignore-missing-alt --ignore-urls '/googleapis.com/,/gstatic.com/,/linkedin.com/
