@@ -10,7 +10,6 @@
 <section id="sec-experience" class="experience">
     <h2 class="title">Other Experience</h2>
 {%      endif %}
-{% for item in root %}
     <div id="exp-{{item.id}}" class="experience-item">
         <div class="role">
         {% if item.role %}
@@ -46,6 +45,5 @@
         <div class="details">{{item.details | markdownify}}</div>
         <br>
     </div>
-    {% endfor %}
 {%  endfor %}
 </section>
