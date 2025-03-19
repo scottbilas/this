@@ -30,11 +30,11 @@ skills:
       - Lua (code+integration)
       - MSBuild :/
       - git, hg, p4 (+admin)
-      - WPF
       - <a href="https://github.com/scottbilas/chezmoi" title="I often zsh from pwsh hosted in a tmux pane in debian wsl via winterm.">dotfiles</a>
   - category: Familiar
     tagline: I can make things work
     skill:
+      - WPF
       - Python
       - Go
       - Typescript
